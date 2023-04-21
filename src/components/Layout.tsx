@@ -9,10 +9,12 @@ type DashboardLayoutProps = {
 function Layout({ children }: DashboardLayoutProps) {
   return (
     <>
-      {/* header section */}
-      <Navbar />
-      {children}
-      <Footer />
+      <div className="h-screen">
+        {/* header section */}
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 }
